@@ -77,7 +77,7 @@ public class FullDrive extends LinearOpMode {
             telemetry.addData("Status", "Running");
             telemetry.update();
 
-            elbow.setPosition(elbow.MAX_POSITION);
+            //elbow.setPosition(elbow.MAX_POSITION);
 
 
             if (gamepad1.y) {
@@ -90,13 +90,14 @@ public class FullDrive extends LinearOpMode {
 //                launcher.setPosition(1);
 //            }
 
-            if (gamepad1.dpad_up) {
-                elbow.setPosition(0);
-            } else if (gamepad1.dpad_down) {
-                elbow.setPosition(1);
-            }
+//            if (gamepad1.dpad_up) {
+//                elbow.setPosition(0);
+//            } else if (gamepad1.dpad_down) {
+//                elbow.setPosition(1);
+//            }
 
-
+            elbow.setPosition(0.5);
+            
 
             if (gamepad1.left_bumper) {
                 armLeft.setPower(-1);
